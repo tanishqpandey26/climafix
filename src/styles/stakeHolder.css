@@ -1,0 +1,89 @@
+
+.stakeHolderSection {
+  margin: 20px auto;
+  padding: 20px auto;
+  text-align: center;
+}
+
+.stakeHolderHeading {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.stakeHolderHeading::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #287781;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.stakeHolderImg img {
+  width: 100%;
+  width: 500px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+/* ===== Stakeholder Cards ===== */
+.stakeHolderCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stakeHolderCard {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.stakeHolderCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stakeHolderCardImg {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.stakeHolderCardHeader {
+  font-size: 24px;
+  padding: 15px 10px 25px;
+  font-weight: 600;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 992px) {
+  .stakeHolderCardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .stakeHolderCardContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .stakeHolderHeading {
+    font-size: 1.8rem;
+  }
+
+  .stakeHolderCardHeader {
+    font-size: 1rem;
+  }
+}

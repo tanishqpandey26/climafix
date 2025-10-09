@@ -1,0 +1,162 @@
+.process-section {
+    padding: 20px 3%;
+    background-color: #fff;
+}
+
+.process-heading h2 {
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    color: #424242;
+    margin-bottom: 10px;
+}
+
+.process-heading p {
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #424242;
+    margin-bottom: 60px;
+}
+
+.process-step {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.process-step .process-text {
+    width: 45%;
+    padding: 20px;
+}
+
+.process-step .process-image {
+    width: 55%;
+    padding: 0px 60px;
+}
+
+.process-step .process-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 39px;
+}
+
+
+.process-step:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+
+.process-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background-color: #287781;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.process-title hr {
+    flex-grow: 1;
+    height: 1px;
+    border: none;
+    background-color: #ccc;
+}
+
+.tick-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.process-text h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #424242;
+    margin-bottom: 12px;
+    line-height: 31px;
+}
+
+.process-text p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #424242;
+    margin-bottom: 16px;
+}
+
+.learn-more {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #287781;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .process-step {
+        flex-direction: column !important;
+    }
+
+    .process-text,
+    .process-image {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .process-heading h2 {
+        font-size: 28px;
+    }
+
+    .process-heading p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .process-text h3 {
+        font-size: 20px;
+    }
+
+    .process-text p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .step-number {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+    }
+
+    .process-step .process-image {
+        padding: 0;
+    }
+
+    .process-step .process-image img {
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .process-heading h2 {
+        font-size: 24px;
+    }
+    .process-text p {
+        font-size: 14px;
+    }
+}

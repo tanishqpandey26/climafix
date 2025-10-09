@@ -1,0 +1,141 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 32px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  height: 70px;
+}
+
+.navbar-right {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.navbar-right li {
+  position: relative;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #424242;
+  line-height: 100%;
+  letter-spacing: 0;
+  font-style: bold;
+}
+
+.navbar-right a.active {
+  background: #59898E33;
+  color: #287781 !important;
+  border-radius: 6px;
+  padding: 12px 18px;
+}
+
+.dropdown.open .dropdown-content {
+  display: block !important;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  min-width: 240px;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 12px 18px;
+  color: #424242;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-content li a:hover {
+  background-color: #59898E33;
+  color: #287781;
+}
+
+.contact-btn {
+  background-color: #287781;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  background-color: #1d5e65;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    padding: 16px 24px;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    cursor: pointer;
+    color: #424242;
+  }
+
+  .navbar-right {
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    margin: 10px auto;
+    display: none;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 999;
+    max-height: calc(100vh - 120px); 
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .navbar-right.active {
+    display: flex;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    display: none;
+  }
+
+  .dropdown.open .dropdown-content {
+    display: block;
+  }
+}

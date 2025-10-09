@@ -1,0 +1,60 @@
+ .sponsorSection {
+   padding: 60px 5%;
+   background: #f8fbfc;
+ }
+
+ .sponsorSection .sectionHeader {
+   font-size: 40px;
+   font-weight: 800;
+   text-align: center;
+   margin-bottom: 8px;
+   color: #424242;
+ }
+
+ .sponsorSection .sectionSubheader {
+   text-align: center;
+   color: #666;
+   margin-bottom: 24px;
+ }
+
+ .sponsorGrid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 16px;
+   align-items: center;
+ }
+
+ .sponsorCard {
+   background: #fff;
+   border: 1px solid #e6eef0;
+   border-radius: 12px;
+   padding: 10px;
+   text-align: center;
+   transition: transform .2s ease, box-shadow .2s ease;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+ }
+ .sponsorCard:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,0,0,0.1); }
+
+ .sponsorLogoWrap { width: 100%; aspect-ratio: 16 / 9; display: grid; place-items: center; }
+ .sponsorLogo { max-width: 100%; max-height: 100%; object-fit: contain; }
+ .sponsorName { font-weight: 700; color: #263238; font-size: 13px; margin-top: 6px; }
+
+ /* Animations */
+ @keyframes fadeIn {
+   from { opacity: 0; }
+   to { opacity: 1; }
+ }
+ .reveal-fade { animation: fadeIn .6s ease both; }
+
+
+ @media (max-width: 1024px) {
+   .sponsorGrid { grid-template-columns: repeat(4, 1fr); }
+ }
+ @media (max-width: 768px) {
+   .sponsorGrid { grid-template-columns: repeat(3, 1fr); }
+ }
+ @media (max-width: 560px) {
+   .sponsorGrid { grid-template-columns: repeat(2, 1fr); }
+ }
+
+

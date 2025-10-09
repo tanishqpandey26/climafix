@@ -1,0 +1,249 @@
+.heroSection {
+  margin: 100px 0 20px;
+  text-align: left;
+}
+
+.heroContainer {
+  padding: 40px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* ===== Left Column ===== */
+.heroLeftColumn {
+  flex: 1;
+  min-width: 300px;
+}
+
+.heroImg {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Right Column ===== */
+.heroRightColumn {
+  flex: 1;
+  min-width: 300px;
+}
+
+.heroHeading {
+  font-size: 44px;
+  color: #424242;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.heroDesc {
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.heroAlert {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #287781;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+  gap: 10px;
+}
+
+.heroBtns {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #195057 0%, #4ED0E1 100%);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #176528;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #000;
+  border: 0.1px solid #287781;
+}
+
+.btn-secondary:hover {
+  background-color: #287781;
+  color: #fff;
+}
+
+/* ===== Countdown Section ===== */
+.heroCountDown {
+  margin: 40px auto 20px;
+  width: 100%;
+  padding: 20px 0 ;
+  text-align: center;
+  background-color: #092A2E;
+}
+
+.heroCountDown h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: nowrap;
+  height: 100px;
+}
+
+.time-box {
+  color:#fff;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 20px;
+  min-width: 80px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.time-box span {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.time-box p {
+  font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+  .heroContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroRightColumn {
+    text-align: center;
+  }
+
+  .heroHeading {
+    font-size: 2rem;
+  }
+
+  .heroDesc {
+    font-size: 1rem;
+  }
+
+  .heroBtns {
+    justify-content: center;
+  }
+
+  
+}
+
+/* === Visual enhancements appended as overrides === */
+.heroBadge {
+  display: inline-block;
+  background: linear-gradient(90deg, #E6F8FA 0%, #FFFFFF 100%);
+  color: #287781;
+  border: 1px solid rgba(40, 119, 129, 0.25);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.heroAlert {
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #E6F8FA;
+}
+
+.heroCountDown {
+  padding: 24px 0;
+  background: radial-gradient(100% 100% at 0% 0%, #0c3a40 0%, #092A2E 60%, #071f22 100%);
+  position: relative;
+}
+
+.heroCountDown h3 {
+  font-size: 26px;
+}
+
+.countdown-timer {
+  gap: 18px;
+  height: 110px;
+}
+
+.time-box {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 12px 14px;
+  border-radius: 16px;
+  min-width: 88px;
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.time-box span {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.time-box p {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.time-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+@media (max-width: 768px) {
+  .countdown-timer {
+    gap: 10px;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10px 16px;
+  }
+
+  .time-box {
+    min-width: 70px;
+    padding: 10px 12px;
+    border-radius: 12px;
+  }
+
+  .time-box span {
+    font-size: 22px;
+  }
+
+  .time-box p {
+    font-size: 12px;
+  }
+}
