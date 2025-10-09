@@ -2,6 +2,7 @@
   padding: 80px 5%;
   position: relative;
   overflow: hidden;
+   background-color: #36393f;
 }
 
 .summitContainer {
@@ -16,7 +17,6 @@
 
 /* ===== Left Column (always on top) ===== */
 .summitLeftColumn {
-  max-width: 800px;
   z-index: 2;
 }
 
@@ -24,11 +24,12 @@
   font-size: 44px;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .summitDesc {
   font-size: 1.1rem;
-  color: #444;
+  color: #fff;
   line-height: 1.6;
   margin-bottom: 30px;
 }

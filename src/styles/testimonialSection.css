@@ -1,11 +1,11 @@
 /* testimonial */
 
  .testimonialSection {
-             margin: 0 auto;
+             margin: 40px auto 0;
              padding: 5px;
              font-family: 'Plus Jakarta Sans', sans-serif;
              background: #fff;
-             overflow-x: clip; /* avoid horizontal scrollbar on Windows */
+             overflow-x: clip; 
          }
 
         .testimonialHeading {

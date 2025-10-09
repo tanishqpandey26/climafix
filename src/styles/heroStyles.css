@@ -1,6 +1,6 @@
 .heroSection {
   margin: 100px 0 20px;
-  text-align: left;
+  text-align: left; 
 }
 
 .heroContainer {
@@ -38,7 +38,7 @@
 }
 
 .heroDesc {
-  color: #444;
+  color: #424242;
   font-size: 1.1rem;
   margin-bottom: 25px;
   line-height: 1.6;
